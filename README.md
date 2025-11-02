@@ -6,7 +6,7 @@
 ---
 
 ## 1. Récupération du code source
-Dans cette première étape, nous avons récupéré le code fourni contenant la structure de base du projet Maven multi-modules.  
+Dans cette première étape, j'ai récupéré le code fourni contenant la structure de base du projet Maven multi-modules.  
 Le projet contient quatre modules principaux :
 
 - **time-service** : définit l’interface `TimerService` et les interfaces liées à l’observation.  
@@ -17,9 +17,9 @@ Le projet contient quatre modules principaux :
 ---
 
 ## 2. Ouverture et observation du projet
-Le projet a été ouvert dans IntelliJ IDEA. Nous avons observé que :
+Le projet a été ouvert dans IntelliJ IDEA. J'ai observé que :
 
-- Le module `time-service` contient l’interface `TimerService` et deux autres interfaces pour gérer les observateurs.  
+- Le module `time-service` contient l’interface `TimerService` ,`TimerChangeListener` , et `TimeChangeProvider` pour gérer les observateurs.  
 - L’implémentation de base `DummyTimeServiceImpl` simule le passage du temps.  
 - Aucun affichage direct de l’heure n’est encore implémenté.
 
@@ -85,7 +85,7 @@ Créer une interface graphique (Swing) affichant l’heure en temps réel.
 - Création d’une classe `HorlogeGraphique` dans le module `Gui`.  
 - Utilisation d’un `JLabel` pour afficher l’heure mise à jour à chaque seconde.  
 - Inscription de la fenêtre comme observatrice du `TimerService`.
-
+- Créer une classe principale dans le module launcher,  `InterfaceGraphique ` pour lancer l'application
 ---
 ![Horloge](pics/horloge.png)
 
