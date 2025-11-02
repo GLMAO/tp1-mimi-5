@@ -55,9 +55,8 @@ Créer une classe cliente similaire à `Horloge`, mais qui décrémente une vale
 ### Observation
 Lors des premiers tests, plusieurs erreurs se produisent lorsque plusieurs objets sont enregistrés comme observateurs, notamment des conflits d’accès concurrents.
 
-### Question
-Pourquoi ces bogues apparaissent-ils ?  
-**Réponse :** Le mécanisme d’observation initial n’est pas thread-safe et ne gère pas correctement les inscriptions multiples ou les suppressions d’observateurs pendant la notification.
+ 
+**Le problème :** ces bogues apparaissent car le mécanisme d’observation initial n’est pas thread-safe et ne gère pas correctement les inscriptions multiples ou les suppressions d’observateurs pendant la notification.
 
 ---
 
@@ -79,7 +78,7 @@ Les problèmes de bogues disparaissent. Les notifications sont désormais géré
 ## 6. Bonus : Interface graphique
 
 ### Objectif
-Créer une interface graphique (Swing) affichant l’heure en temps réel.
+Créer une interface graphique affichant l’heure en temps réel.
 
 ### Travail effectué
 - Création d’une classe `HorlogeGraphique` dans le module `Gui`.  
