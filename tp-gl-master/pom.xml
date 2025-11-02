@@ -31,5 +31,6 @@
   <module>timer-service</module>
   <module>time-service-impl</module>
   <module>timer-service-client</module>
+     <module>gui</module>
  </modules>
 </project>
